@@ -1,0 +1,19 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.2
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - surge-github-autorelease > surge > request > hawk:
+        patched: '2018-04-10T09:22:51.870Z'
+  'npm:minimatch:20160620':
+    - surge-github-autorelease > surge > fstream-ignore > minimatch:
+        patched: '2018-04-10T09:22:51.870Z'
+  'npm:request:20160119':
+    - surge-github-autorelease > surge > request:
+        patched: '2018-04-10T09:22:51.870Z'
+  'npm:tar:20151103':
+    - surge-github-autorelease > surge > tar:
+        patched: '2018-04-10T09:22:51.870Z'
+    - surge-github-autorelease > surge > tar.gz > tar:
+        patched: '2018-04-10T09:22:51.870Z'

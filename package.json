@@ -22,7 +22,9 @@
     "storybook": "start-storybook -p 6006",
     "release": "node scripts/npm-release.js",
     "export-components": "import-path --path src",
-    "lint": "yoshi lint"
+    "lint": "yoshi lint",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "yoshi": {
     "features": {
@@ -123,7 +125,8 @@
     "wix-animations": "^1.0.141",
     "wix-ui-backoffice": "^1.0.0",
     "wix-ui-icons-common": "^1.0.19",
-    "wix-ui-test-utils": "^1.0.0"
+    "wix-ui-test-utils": "^1.0.0",
+    "snyk": "^1.71.0"
   },
   "jest": {
     "setupFiles": [
@@ -184,5 +187,6 @@
         "fit"
       ]
     }
-  }
+  },
+  "snyk": true
 }
